@@ -17,10 +17,10 @@ endif
 " A.3 Keywords are matched in a case-insensitive manner. (only keywords)
 syntax case ignore
 syntax keyword rqKeyword BASE PREFIX SELECT DISTINCT CONSTRUCT DESCRIBE ASK FROM NAMED WHERE ORDER BY ASC DESC LIMIT OFFSET OPTIONAL GRAPH FILTER REGEX UNION
+syntax keyword rqBuiltinCall STR LANG LANGMATCHES DATATYPE BOUND isIRI isURI isBLANK isLITERAL 
 syntax case match
 " case sensitive: 
 syntax keyword rqRdfType a
-syntax keyword rqBuiltinCall STR LANG LANGMATCHES DATATYPE BOUND isIRI isURI isBLANK isLITERAL 
 syntax keyword rqBoolean true false 
 syntax keyword Todo TODO FIXME XXX 
 " A.4 Comments 
