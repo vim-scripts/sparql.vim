@@ -19,7 +19,7 @@ syntax case ignore
 syntax keyword rqKeyword BASE PREFIX SELECT DISTINCT CONSTRUCT DESCRIBE ASK FROM NAMED WHERE ORDER BY ASC DESC LIMIT OFFSET OPTIONAL GRAPH FILTER REGEX UNION
 syntax keyword rqBuiltinCall STR LANG LANGMATCHES DATATYPE BOUND isIRI isURI isBLANK isLITERAL 
 syntax keyword rqKeyword1_1 MINUS DISTINCT GROUP BY HAVING NOT EXISTS SERVICE AS 
-syntax keyword rqBuiltinCall1_1 ROUND 
+syntax keyword rqBuiltinCall1_1 ROUND BIND 
 syntax keyword rqBuiltinAggregate1_1 COUNT MIN MAX SUM AVG GROUP_CONCAT SAMPLE 
 syntax case match
 " case sensitive: 
