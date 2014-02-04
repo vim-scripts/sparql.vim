@@ -16,11 +16,14 @@ endif
 
 " A.3 Keywords are matched in a case-insensitive manner. (only keywords)
 syntax case ignore
-syntax keyword rqKeyword BASE PREFIX SELECT DISTINCT CONSTRUCT DESCRIBE ASK FROM NAMED WHERE ORDER BY ASC DESC LIMIT OFFSET OPTIONAL GRAPH FILTER REGEX 
+syntax keyword rqKeyword BASE PREFIX SELECT DISTINCT CONSTRUCT DESCRIBE ASK FROM NAMED WHERE ORDER BY ASC DESC LIMIT OFFSET OPTIONAL GRAPH FILTER REGEX UNION
+syntax keyword rqBuiltinCall STR LANG LANGMATCHES DATATYPE BOUND isIRI isURI isBLANK isLITERAL 
+syntax keyword rqKeyword1_1 MINUS DISTINCT GROUP BY HAVING NOT EXISTS SERVICE AS BINDINGS
+syntax keyword rqBuiltinCall1_1 ROUND BIND 
+syntax keyword rqBuiltinAggregate1_1 COUNT MIN MAX SUM AVG GROUP_CONCAT SAMPLE 
 syntax case match
 " case sensitive: 
 syntax keyword rqRdfType a
-syntax keyword rqBuiltinCall STR LANG LANGMATCHES DATATYPE BOUND isIRI isURI isBLANK isLITERAL 
 syntax keyword rqBoolean true false 
 syntax keyword Todo TODO FIXME XXX 
 " A.4 Comments 
@@ -52,7 +55,10 @@ syntax match rqVar /[?$]\{1\}\(\w\|\\U\x\{8\}\|\\u\x\{4\}\)\+/ contains=rqCodepo
 
 
 highlight link rqKeyword Keyword 
+highlight link rqKeyword1_1 Keyword 
 highlight link rqBuiltinCall Keyword
+highlight link rqBuiltinCall1_1 Keyword
+highlight link rqBuiltinAggregate1_1 Keyword
 highlight link rqVar Identifier 
 highlight link rqStringSingle String 
 highlight link rqStringLongSingle String 
